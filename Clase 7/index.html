@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mvp.css">
+    <title>Multimedia en la Web</title>
+</head>
+<body>
+    <div>
+        <h1>Multimedia en la Web</h1>
+    </div>
+    <section>
+        <h2>El Tag "audio"</h2>
+        <p>El tag audio tiene varios atributos para controles, autoplay, etc.</p>
+        <div>
+            <audio controls volume="0.5" preload src="data/423783__someonecool15__lego-bricks-1.mp3"> Audio </audio>
+        </div>
+        <p>Una manera de usar el tag audio es la vista arriba, pero también se puede usar de poniendo dentro el contenido source.</p>
+        <div>
+            <audio controls preload volume="0.5">
+                <source src="data/618865__milkotz__sheep-sound.mp3" type="audio/mp3"/>
+            </audio>            
+        </div>
+        <p>cuando lo pongo como source a parte es importante decir el tipo de archivo que estoy poniendo. Importante también poner los controles y algunos otros atributos. Es buena practica poner el preload.</p>
+    </section>
+    <section>
+        <h2>Video</h2>
+        <br>
+        <div>
+            <video height="400" controls preload src="data/_Starfiled140_preview.mp4"></video>
+            <video height="200" autoplay loop>
+                <source src="data/_Starfiled140_preview.mp4" type="video/mp4">
+            </video>            
+        </div>
+        <p>Para el video también tengo la posibilidad de poner distintos atributos como controles, autoplay, preload. Lo puedoponer también en loop. A veces se puede estar puesto como fondo. En ese caso va con autoplay y loop. Por otro lado es buena costumbre poner el video en varios formatos para que si el usuario no puede reproducir el video en un formato el código salte automaticamente a otro. Poster sirve para poner una imagen para poner hasta que el video este cargado para reproducir</p>
+    </section>
+    <section>
+        <h2>Tag picture</h2>
+        <p>La idea es usarla para tener distintos tipos de imagen para diferentes tamaños de pantalla.</p>
+        <picture>
+            <source srcset="data/800.jpg" media="(min-width: 800px)">
+            <source srcset="data/600.jpg" media="(min-width: 600px)">
+            <img src="data/200.jpg" alt="">
+        </picture>
+    </section>
+</body>
+</html>

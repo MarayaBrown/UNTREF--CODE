@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;1,300;1,500&family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Fuentes y CSS</title>
+    <!-- <style>
+        h1 {color: blue}
+    </style> -->
 </head>
 <body>
-    <h1>Fuentes y CSS</h1>
+    <header>
+        <h1 class="center">Fuentes y CSS</h1>
+    </header>
     <section>
         <div>
             <h2>Fuentes desde Google fonts</h2>
@@ -22,6 +27,16 @@
             <h2>Fuentes locales y fuentes remotas</h2>
             <p> Esta tecnica no es recomendada para que el usuario tenga la mejor experiencia</p>
             
+        </div>
+    </section>
+    <section>
+        <h2>Manejar estilos desde HTML</h2>
+        <p>Para esto tenemos que hacer el style en el head.</p>
+        <h2 class="remarked">Manejar estilos desde css</h2>
+        <div>
+            <p>Puedo empezar a elegir tipos por h1, h2, h2. También por <span class="remarked"> clase usando el punto.</span> </p>
+            <p>Hay que recordar que css funciona por cascada. Las clases tienen prioridad a los diseños elegidos para h1, h2, etc.</p>
+            <p>La jerarquia esta dada por clase, etiqueta, id. </p>
         </div>
     </section>
 </body>
